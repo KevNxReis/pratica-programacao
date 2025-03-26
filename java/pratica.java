@@ -3,3 +3,4 @@ public class pratica {
         System.out.println("KA-ME-HA-ME-HAAA");
     }
 }
+ #teste
