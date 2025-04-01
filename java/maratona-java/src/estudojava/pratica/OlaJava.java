@@ -5,9 +5,3 @@ public class OlaJava {
         System.out.println("KA-ME-HA-ME-HAAAA");
     }
 }
-// comentario use (//) para comentar
-
-/*
-    comentario de multiplas linhas
-    finalizar o comentario
-*/
