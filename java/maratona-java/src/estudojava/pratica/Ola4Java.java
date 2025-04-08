@@ -26,11 +26,29 @@ public class Ola4Java {
         System.out.println("É maior que e igual a: " + isDezMaiorQueVinteEIgualADez);
         System.out.println("É maior que ou igual a: " + isDezMaiorQueVinteOuIgualADez);
 
-        double valorTotalContaCorrente = 200;
-        double valorTotalContaPoupanca = 10000;
-        double valorPrecoPlaystation5 = 5000; 
-        boolean isPlaystation5Compravel = valorTotalContaCorrente > valorPrecoPlaystation5
-                || valorTotalContaPoupanca > valorPrecoPlaystation5;
-        System.out.println("É maior que ou igual a: " + isPlaystation5Compravel);
+        double ContaCorrente = 200;
+        double ContaPoupanca = 10000;
+        double Playstation5 = 5000;
+        boolean Playstation5Compravel = ContaCorrente > Playstation5
+                || ContaPoupanca > Playstation5;
+        System.out.println("compravel" + Playstation5Compravel);
+
+        // = += -= *= /= %=
+        double bonus = 1800;
+        bonus += 1000;
+        bonus -= 1000;
+        bonus *= 2;
+        bonus /= 2;
+        bonus %= 2;
+        System.out.println(bonus);
+
+        // ++ --
+        int contador = 0;
+        contador ++;
+        contador --;
+        ++ contador;
+        -- contador;
+        System.out.println(contador);
+
     }
 }
