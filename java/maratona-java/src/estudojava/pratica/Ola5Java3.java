@@ -8,5 +8,9 @@ public class Ola5Java3 {
         // (condicao) ? (se for true) : (se for false)
         String resultado = salario > 5000 ? mensagemDoar : mensagemNaoDoar;
         System.out.println(resultado);
+
+        int idade = 20;
+        String categoria = idade < 15 ? "Categoria infantil" : idade <18 ? "Categoria juvenil" : "Categoria adulto";
+        System.out.println(categoria);
     }
 }
