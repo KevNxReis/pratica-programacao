@@ -6,29 +6,25 @@ public class Ola5Java6 {
 
         switch (dia){
             case 1:
-                System.out.println("domingo");
+            case 7:
+                System.out.println("final de semana");
                 break;
             case 2:
-                System.out.println("segunda");
-                break;
             case 3:
-                System.out.println("terça");
-                break;
             case 4:
-                System.out.println("quarta");
-                break;
             case 5:
-                System.out.println("quinta");
-                break;
             case 6:
-                System.out.println("sexta");
+                System.out.println("dia util");
                 break;
-            case 7:
-                System.out.println("sabado");
+            default:
+                System.out.println("opção invalida");
                 break;
-                default:
-                    
+
+
+
         }
+
+
 
     }
 }
