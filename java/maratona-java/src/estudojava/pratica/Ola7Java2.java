@@ -16,7 +16,6 @@ public class Ola7Java2 {
 
         for (int i = 0; i < nomes.length; i++) {
             System.out.println(nomes[i]);
-
         }
 
     }
