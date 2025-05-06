@@ -6,8 +6,9 @@ public class Ola7Java {
         idades[0] = 18;
         idades[1] = 20;
         idades[2] = 30;
-        System.out.println(idades[1]);
-        System.out.println(idades[0]);
-        System.out.println(idades[2]);
+        for (int i = 0; i < idades.length; i++) {
+            System.out.println(idades[i]);
+
+        }
     }
 }
