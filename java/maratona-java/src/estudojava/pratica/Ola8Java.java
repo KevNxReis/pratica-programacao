@@ -1,6 +1,6 @@
 package estudojava.pratica;
 
-public class Java8java {
+public class Ola8Java {
     public static void main(String[] args) {
         int [][] mes = new int[3][4];
         mes[0][0] = 5;
@@ -23,6 +23,13 @@ public class Java8java {
                 System.out.println(mes[i][j]);
             }
 
+        }
+        System.out.println("_______________________________________________");
+
+        for (int[] exem : mes ){
+            for (int num : exem){
+                System.out.println(num);
+            }
         }
     }
 }
