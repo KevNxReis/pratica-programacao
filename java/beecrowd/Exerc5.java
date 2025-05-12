@@ -16,7 +16,6 @@ public class Exerc5 {
 
             if ((A >= 0 && A <= 10.0) && (B >= 0 && B <= 10.0)) {
                 validar = true;
-                break;
             } else {
                 System.out.println("Coloque o valor de nota certa aí, animal");
             }
