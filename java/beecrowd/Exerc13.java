@@ -7,10 +7,8 @@ public class Exerc13 {
         int A = scanner.nextInt();
         int B = scanner.nextInt();
         int C = scanner.nextInt();
-        int sub = A - B;
-        int m = (A + B + sub)/2;
-        int sub2 = C - m;
-        int Maior = (C + m + sub2)/2;
+        int m = (A + B +Math.abs(A-B))/2;
+        int Maior = (C + m+Math.abs(C-m))/2;
         System.out.println(Maior+" eh o maior");
         scanner.close();
     }
