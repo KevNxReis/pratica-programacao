@@ -5,8 +5,11 @@ public class Exerc16 {
         Scanner scanner = new Scanner(System.in);
         int Xkm = 60;
         int Ykm = 90;
-        
-        System.out.println(distancia);
+        int diferencavelo = Math.abs(Xkm - Ykm);
+        int distancia = scanner.nextInt();
+        int tempo = (distancia * 60) / diferencavelo;
+        System.out.println(tempo+" minutos");
+        scanner.close();
 
 
     }
