@@ -6,22 +6,22 @@ public class Exerc38 {
         DecimalFormat decimalFormat = new DecimalFormat("0.00");
         Scanner scanner = new Scanner(System.in);
 
-        double [] lanche = {4.00,4.50,5.00,2.00,1.50};
+        // Array com os preços dos lanches
+        double[] precos = {0.0, 4.00, 4.50, 5.00, 2.00, 1.50};
 
-        System.out.println("Digite o lanche"+ (lanche));
-        double escolha1 = scanner.nextDouble();
+        System.out.println("Digite o código do lanche (1-5):");
+        int codigo = scanner.nextInt();
 
-        System.out.println("Digite o segundo lanche"+ (lanche));
-        double escolha2 = scanner.nextDouble();
+        if (codigo >= 1 && codigo <= 5) {
+            System.out.println("Digite a quantidade:");
+            int quantidade = scanner.nextInt();
 
-        double soma = escolha1 + escolha2;
-        System.out.println("TOTAL: R$ "+decimalFormat.format(soma));
-
-
-
-
+            double total = precos[codigo] * quantidade;
+            System.out.println("Total: R$ " + decimalFormat.format(total));
+        } else {
+            System.out.println("Código inválido!");
         }
 
+        scanner.close();
     }
-
-
+}
