@@ -31,10 +31,6 @@ public class Exerc40 {
             }else{
                 System.out.println("Aluno reprovado."+"\n"+"Media final: "+dec.format(mediafinal));
             }
-
-
         }
-
-
     }
 }
