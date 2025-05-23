@@ -9,22 +9,24 @@ public class Exerc42 {
         int a = num1;
         int b = num2;
         int c = num3;
-        if (a > b){
-            a = num2;
-            b = num1;
+        int temp;
+        if (a > b) {
+            temp = a;
+            a = b;
+            b = temp;
         }
-        if (b > c){
-            b = num3;
-            c = num2;
+        if (b > c) {
+            temp = b;
+            b = c;
+            c = temp;
         }
-        if (a > b){
-            a = num3;
-            b = num2;
+        if (a > b) {
+            temp = a;
+            a = b;
+            b = temp;
         }
-        System.out.println(a+" "+b+" "+c);
-
-
-
+        System.out.println(a+"\n"+b+"\n"+c+"\n");
+        System.out.println(num1+"\n"+num2+"\n"+num3);
+        sc.close();
     }
-
 }
