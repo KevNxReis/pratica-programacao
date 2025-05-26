@@ -10,10 +10,10 @@ public class Exerc43 {
         double C = sc.nextDouble();
         if (A + B > C && A + C > B && B + C > A) {
             double perimetro = A + B + C;
-            System.out.println("Perimetro: " + df.format(perimetro));
+            System.out.println("Perimetro = " + df.format(perimetro));
         } else {
             double area = ((A + B) * C) / 2;
-            System.out.println("Area: " + df.format(area));
+            System.out.println("Area = " + df.format(area));
         }
         sc.close();
     }
