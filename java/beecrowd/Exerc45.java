@@ -9,7 +9,7 @@ public class Exerc45 {
         double B = sc.nextDouble();
         double C = sc.nextDouble();
         if (!(A>0 && B>0 && C>0)) {
-            System.exit(1);
+            return;
         }
         Double [] valores = {A,B,C};
         Arrays.sort(valores, Collections.reverseOrder());
@@ -18,7 +18,7 @@ public class Exerc45 {
         C = valores[2];
         if (A >= (B + C)) {
             System.out.println("NAO FORMA TRIANGULO");
-            System.exit(1);
+            return;
         }
         double a1 = Math.pow(A, 2);
         double b1 = Math.pow(B, 2);
@@ -33,8 +33,7 @@ public class Exerc45 {
         if (A == B && B == C ) {
             System.out.println("TRIANGULO EQUILATERO");
         }
-        if (A != B && B == C && C != A || A != B && B != C && C == A ||
-        A == B && B != C && C != A) {
+        if ((A == B && A != C) || (B == C && A != C)) {
             System.out.println("TRIANGULO ISOSCELES");
         }
         sc.close();
