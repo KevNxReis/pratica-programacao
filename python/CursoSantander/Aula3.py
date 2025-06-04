@@ -14,3 +14,4 @@ print(diferenca)
 
 diferenca_simetrica = num ^ num2
 print(diferenca_simetrica)
+
