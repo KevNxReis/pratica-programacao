@@ -15,3 +15,7 @@ print(diferenca)
 diferenca_simetrica = num ^ num2
 print(diferenca_simetrica)
 
+x = 5
+y = "3"
+z = x + int(y)
+print(z)
