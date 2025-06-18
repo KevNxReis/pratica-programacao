@@ -12,11 +12,29 @@ public class Exerc66 {
         double positivos = 0;
         double negativos = 0;
         double impar = 0;
-        double 
+        double par = 0;
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] > 0) {
-
+                positivos++;
+                System.out.println(positivos+ " valore(s) positivo(s)");
+                break;
+            }
+            if (nums[i] > 0) {
+                negativos++;
+                System.out.println(negativos+ " valore(s) negativo(s)");
+                break;
+            }
+            if (nums[i] % 2 == 0) {
+                par++;
+                System.out.println(par+ " valore(s) par(es)");
+                break;
+            }
+            if (nums[i] % 2 != 0) {
+                impar++;
+                System.out.println(impar+ " valore(s) impar(es)");
+                break;
             }
         }
+        sc.close();
     }
 }
