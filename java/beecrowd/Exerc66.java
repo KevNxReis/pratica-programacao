@@ -3,38 +3,35 @@ import java.util.Scanner;
 public class Exerc66 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        double num1 = sc.nextDouble();
-        double num2 = sc.nextDouble();
-        double num3 = sc.nextDouble();
-        double num4 = sc.nextDouble();
-        double num5 = sc.nextDouble();
-        double [] nums = {num1, num2, num3, num4, num5};
-        double positivos = 0;
-        double negativos = 0;
-        double impar = 0;
-        double par = 0;
+        int num1 = sc.nextInt();
+        int num2 = sc.nextInt();
+        int num3 = sc.nextInt();
+        int num4 = sc.nextInt();
+        int num5 = sc.nextInt();
+        int[] nums = {num1, num2, num3, num4, num5};
+        int positivos = 0;
+        int negativos = 0;
+        int impar = 0;
+        int par = 0;
+
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] > 0) {
                 positivos++;
-                System.out.println(positivos+ " valore(s) positivo(s)");
-                break;
-            }
-            if (nums[i] > 0) {
+            } else if (nums[i] < 0) {
                 negativos++;
-                System.out.println(negativos+ " valore(s) negativo(s)");
-                break;
             }
             if (nums[i] % 2 == 0) {
                 par++;
-                System.out.println(par+ " valore(s) par(es)");
-                break;
-            }
-            if (nums[i] % 2 != 0) {
+            } else {
                 impar++;
-                System.out.println(impar+ " valore(s) impar(es)");
-                break;
             }
         }
+
+        System.out.println(par + " valore(s) par(es)");
+        System.out.println(impar + " valore(s) impar(es)");
+        System.out.println(positivos + " valore(s) positivo(s)");
+        System.out.println(negativos + " valore(s) negativo(s)");
+
         sc.close();
     }
 }
