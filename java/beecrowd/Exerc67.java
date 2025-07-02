@@ -6,7 +6,6 @@ public class Exerc67 {
         int valor = sc.nextInt();
         for (int i = 1; i <= valor; i++) {
             if (i % 2 != 0) {
-                }
                 System.out.println(i);
             }
         }
