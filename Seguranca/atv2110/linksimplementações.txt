@@ -1,0 +1,5 @@
+AES: https://github.com/ricmoo/pyaes
+
+3DES: https://github.com/twhiteman/pyDes
+
+RC4: https://github.com/DavidBuchanan314/rc4
