@@ -18,7 +18,7 @@ public class AES {
 
     private SecretKey chaveSecreta;
     private byte[] iv;
-    
+
     public AES() throws Exception {
         this.chaveSecreta = gerarChave();
         this.iv = gerarIV();
